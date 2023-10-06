@@ -2,7 +2,7 @@ package stacksonstacks.src.stacksonstacks;
 
 public class Maze {
 
-    private char[][] mazeArray;
+    private char[][] mazeGrid;
     private int startCoordX;
     private int startCoordY;
     private int endCoordX;
@@ -10,12 +10,12 @@ public class Maze {
     private int mazeWidth;
     private int mazeHeight;
 
-    public char[][] getMazeArray() {
-        return mazeArray;
+    public char[][] getMazeGrid() {
+        return mazeGrid;
     }
 
-    public void setMazeArray(char[][] mazeArray) {
-        this.mazeArray = mazeArray;
+    public void setMazeGrid(char[][] mazeGrid) {
+        this.mazeGrid = mazeGrid;
     }
 
     public int getStartCoordX() {
