@@ -14,17 +14,17 @@ public class MazeUtil {
             // Set Maze Dimensions
             String line = reader.readLine();
             setMazeDimensions(maze, line);
-            System.out.println("Maze Size: " + maze.getMazeWidth() + " x " + maze.getMazeHeight());
+            //System.out.println("Maze Size: " + maze.getMazeWidth() + " x " + maze.getMazeHeight());
 
             // Set Start Coordinates
             line = reader.readLine();
             setStartCoordinates(maze, line);
-            System.out.println("Start Coordinates: " + maze.getStartCoordX() + ", " + maze.getStartCoordY());
+            //System.out.println("Start Coordinates: " + maze.getStartCoordX() + ", " + maze.getStartCoordY());
 
             // Set End Coordinates
             line = reader.readLine();
             setEndCoordinates(maze, line);
-            System.out.println("End Coordinates: " + maze.getEndCoordX() + ", " + maze.getEndCoordY());
+            //System.out.println("End Coordinates: " + maze.getEndCoordX() + ", " + maze.getEndCoordY());
 
             // Reads maze grid from file and recreates it in an array.
             buildMazeGrid(maze, reader);
@@ -67,9 +67,9 @@ public class MazeUtil {
             mazeData = line.split(" ");
             for (int i = 0; i < mazeData.length; i++) {
                 grid[row][i] = mazeData[i].charAt(0);
-                System.out.print(grid[row][i] + " ");
+                //System.out.print(grid[row][i] + " ");
             }
-            System.out.println();
+            //System.out.println();
             row++;
         }
 
